@@ -46,7 +46,8 @@ cursor:pointer;
 
 .hero{
 height:520px;
-background:linear-gradient(135deg,#c445b3,#8e44ad);
+background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+           url("images/Fon1.jpg") no-repeat center center/cover;
 color:white;
 display:flex;
 flex-direction:column;
@@ -59,11 +60,13 @@ text-align:center;
 font-size:64px;
 margin:0;
 letter-spacing:2px;
+text-shadow:0 5px 15px rgba(0,0,0,0.6);
 }
 
 .hero p{
 margin-top:10px;
 opacity:0.9;
+text-shadow:0 3px 10px rgba(0,0,0,0.5);
 }
 
 .hero button{
@@ -163,6 +166,7 @@ width:100%;
 height:auto;
 border-radius:10px;
 }
+
 .hero-btn{
 margin-top:30px;
 padding:15px 45px;
@@ -180,6 +184,7 @@ transition:0.3s;
 transform:scale(1.05);
 box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
+
 /* CATALOG PAGE */
 
 .catalog-page{
@@ -243,6 +248,7 @@ border:none;
 border-radius:20px;
 cursor:pointer;
 }
+
 /* CATEGORY PAGE */
 
 .category-page{
