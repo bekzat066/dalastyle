@@ -1,9 +1,19 @@
-let cart = 0;
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-function addToCart(){
+function addToCart(name, price) {
+    cart.push({ name, price });
 
-cart++;
+    localStorage.setItem("cart", JSON.stringify(cart));
 
-document.getElementById("cart-count").innerText = cart;
-
+    updateCartCount();
 }
+
+function updateCartCount() {
+    document.getElementById("cart-count").innerText = cart.length;
+}
+
+function goToCart() {
+    window.location.href = "cart.html";
+}
+
+updateCartCount();
