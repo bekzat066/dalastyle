@@ -47,7 +47,8 @@ cursor:pointer;
 .hero{
 height:520px;
 background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-           url("images/Fon1.jpg") no-repeat center center/cover;
+           url("images/Fon1.jpg") no-repeat center center;
+background-size:cover;
 color:white;
 display:flex;
 flex-direction:column;
@@ -55,7 +56,6 @@ align-items:center;
 justify-content:center;
 text-align:center;
 }
-
 .hero h1{
 font-size:64px;
 margin:0;
